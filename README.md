@@ -7,3 +7,36 @@ This repo contains the code for our paper "*NTRENet++: Unleashing the Power of N
 <p align="middle">
   <img src="NTRENet++/img/framework1.jpg">
 </p>
+
+## &#x1F527; Usage
+### Dependencies
+
+- Python 3.8
+- PyTorch 1.7.0
+- cuda 11.0
+- torchvision 0.8.1
+- tensorboardX 2.14
+
+### Datasets
+
+- PASCAL-5<sup>i</sup>:  [VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) + [SBD](http://home.bharathh.info/pubs/codes/SBD/download.html)
+
+- COCO-20<sup>i</sup>:  [COCO2014](https://cocodataset.org/#download)
+
+   Download the [data](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/langchunbo_mail_nwpu_edu_cn/ESvJvL7X86pNqK5LSaKwK0sByDLwNx0kh73PVJJ_m1vSCg?e=RBjfKp) lists (.txt files) and put them into the `BAM/lists` directory. 
+
+- Run `util/get_mulway_base_data.py` to generate [base annotations](https://mailnwpueducn-my.sharepoint.com/:f:/g/personal/langchunbo_mail_nwpu_edu_cn/Eg7-69tgeE5Em5jEHUyvafEBA9Gj9ZCtCNV-N8rtcxySKg?e=dFvKW5) for **stage1**, or directly use the trained weights.
+
+### Visualization
+
+<p align="middle">
+    <img src="NTRENet++/img/comparvis.jpg">
+</p>
+
+## References
+
+This repo is mainly built based on [PFENet](https://github.com/dvlab-research/PFENet), [RePRI](https://github.com/mboudiaf/RePRI-for-Few-Shot-Segmentation), and [SemSeg](https://github.com/hszhao/semseg). Thanks for their great work!
+
+## BibTeX
+
+If you find our work and this repository useful. Please consider giving a star :star: and citation &#x1F4DA;.
