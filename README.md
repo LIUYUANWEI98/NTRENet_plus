@@ -9,7 +9,7 @@ This repo contains the code for our paper "*NTRENet++: Unleashing the Power of N
 </p>
 The framework of NTRENet++.
 
-**We extend the method on the task of FSVOS.**
+## :sparkles: **We extend the method on the task of FSVOS.**
 <p align="middle">
   <img src="clip-NTRENet++/img/framwork2.jpg">
 </p>
