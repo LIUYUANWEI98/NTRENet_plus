@@ -31,6 +31,19 @@ The framework of clip-NTRENet++.
 - COCO-20<sup>i</sup>:  [COCO2014](https://cocodataset.org/#download)
 
 
+### Performance
+
+Performance comparison with the state-of-the-art approaches (*i.e.*,  [PFENet](https://github.com/dvlab-research/PFENet)) in terms of **average** **mIoU** across all folds. 
+
+##### PASCAL-5<sup>i</sup>
+
+   | Backbone | Method     | 1-shot                   | 5-shot                   |
+   | -------- | ---------- | ------------------------ | ------------------------ |
+   | ResNet50    | PFENet      | 60.8                    | 61.9                    |
+   |          | NTRENet++ (ours) | 65.3 <sub>(+4.5)</sub> | 66.4  <sub>(+4.5)</sub> |
+   | ResNet101 | PFENet     | 60.1                   | 61.4                    |
+   |          | NTRENet++ (ours) | 64.8 <sub>(+4.7)</sub> | 69.0 <sub>(+7.6)</sub> |
+
 ### Visualization
 
 <p align="middle">
