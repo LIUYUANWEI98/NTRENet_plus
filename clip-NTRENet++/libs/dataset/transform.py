@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Author  : Haoxin Chen
-# @File    : transform.py
 import numpy as np
 import torch
 import cv2
