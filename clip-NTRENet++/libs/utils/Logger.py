@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Author  : Haoxin Chen
-# @File    : Logger.py
 import torch
 import numpy as np
 import time
