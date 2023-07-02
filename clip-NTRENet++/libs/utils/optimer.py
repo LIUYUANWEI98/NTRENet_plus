@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Author  : Haoxin Chen
-# @File    : optimer.py
+
 from torch.optim import SGD, Adam
 def DAN_optimizer(model):
     for param in model.encoder.parameters():
