@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Author  : Haoxin Chen
-# @File    : YoutubeVOS.py
 from pycocotools.ytvos import YTVOS
 from torch.utils.data import Dataset
 import os
