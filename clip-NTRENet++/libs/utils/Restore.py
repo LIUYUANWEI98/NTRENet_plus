@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Author  : Haoxin Chen
-# @File    : Restore.py
+
 import os
 import shutil
 import torch
