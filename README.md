@@ -24,13 +24,32 @@ The framework of clip-NTRENet++.
 - torchvision 0.8.1
 - tensorboardX 2.14
 
-### Datasets
+### Datasets and Data Preparation
 
-- PASCAL-5<sup>i</sup>:  [VOC2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) + [SBD](http://home.bharathh.info/pubs/codes/SBD/download.html)
+Please download the following datasets:
 
-- COCO-20<sup>i</sup>:  [COCO2014](https://cocodataset.org/#download)
++ PASCAL-5i is based on the [**PASCAL VOC 2012**](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) and [**SBD**](http://home.bharathh.info/pubs/codes/SBD/download.html) where the val images should be excluded from the list of training samples.
 
++ [**COCO 2014**](https://cocodataset.org/#download).
 
+This code reads data from .txt files where each line contains the paths for image and the correcponding label respectively. Image and label paths are seperated by a space. Example is as follows:
+
+    image_path_1 label_path_1
+    image_path_2 label_path_2
+    image_path_3 label_path_3
+    ...
+    image_path_n label_path_n
+
+Then update the train/val/test list paths in the config files.
+
+### Train with our Models
++ Update the config file by speficifying the target **split** and **path** (`weights`) for loading the checkpoint.
++ Execute `mkdir initmodel` at the root directory.
++ Download the ImageNet pretrained [**backbones**](https://mycuhk-my.sharepoint.com/:u:/g/personal/1155122171_link_cuhk_edu_hk/EQEY0JxITwVHisdVzusEqNUBNsf1CT8MsALdahUhaHrhlw?e=4%3a2o3XTL&at=9) and put them into the `initmodel` directory.
++ Execute this command at the root directory:
+
+    python train.py 
+  
 ### Performance
 
 Performance comparison with the state-of-the-art approaches (*i.e.*,  [PFENet](https://github.com/dvlab-research/PFENet)) in terms of **average** **mIoU** across all folds. 
